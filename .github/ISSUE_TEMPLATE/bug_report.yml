@@ -1,0 +1,107 @@
+name: "🐛 Bug Report"
+description: Report a bug or unexpected behavior in Scoutly
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees: []
+body:
+    - type: markdown
+      attributes:
+          value: |
+              ## 🐞 Bug Report
+
+              Thank you for reporting a bug in **Scoutly**. Clear, reproducible reports help us isolate and fix issues faster.
+
+              - 💡 Search existing issues to ensure this hasn't already been reported.
+              - 🔒 If this is a security vulnerability, please email **security@scoutly.in** instead of filing a public issue.
+
+    - type: dropdown
+      id: component
+      attributes:
+          label: "📦 Affected Component"
+          description: "Which part of the Scoutly platform is experiencing the issue?"
+          options:
+              - "Web App (apps/web)"
+              - "API Backend (apps/api)"
+              - "Chrome Extension (apps/ext)"
+              - "Python Ingestion Engine (services/engine)"
+              - "Shared UI Primitives (@scoutly/ui)"
+              - "Database / Redis / Infrastructure"
+              - "Other"
+      validations:
+          required: true
+
+    - type: textarea
+      id: environment
+      attributes:
+          label: "📌 Environment Information"
+          description: "Provide details about your environment:"
+          placeholder: |
+              - OS & Version (e.g. macOS 15.2 / Ubuntu 24.04):
+              - Browser & Version (e.g. Chrome 133 / Safari 18):
+              - Node.js & pnpm Version (e.g. Node 22.12, pnpm 10.2):
+              - Go Version (if API):
+              - Python Version (if Engine):
+              - Scoutly Commit/Branch:
+      validations:
+          required: true
+
+    - type: textarea
+      id: description
+      attributes:
+          label: "🐛 Describe the Bug"
+          description: "A clear and concise description of the bug."
+          placeholder: "When trying to generate a tailored resume for..."
+      validations:
+          required: true
+
+    - type: textarea
+      id: steps
+      attributes:
+          label: "🚶 Steps to Reproduce"
+          description: "Provide step-by-step instructions to replicate the behavior."
+          placeholder: |
+              1. Log in and navigate to '...'
+              2. Click on '...'
+              3. Submit payload '...'
+              4. Notice error in response
+      validations:
+          required: true
+
+    - type: textarea
+      id: expected
+      attributes:
+          label: "✅ Expected Behavior"
+          description: "What did you expect to happen?"
+          placeholder: "Expected the application to..."
+      validations:
+          required: true
+
+    - type: textarea
+      id: actual
+      attributes:
+          label: "❌ Actual Behavior"
+          description: "What actually occurred when you performed the steps?"
+          placeholder: "Instead, received HTTP 500 / blank page with error..."
+      validations:
+          required: true
+
+    - type: textarea
+      id: logs
+      attributes:
+          label: "📜 Relevant Logs or Console Output (Optional)"
+          description: "Paste relevant error messages, API responses, or stack traces (format using code blocks)."
+          render: shell
+
+    - type: textarea
+      id: visual_evidence
+      attributes:
+          label: "📸 Screenshots or Videos (Optional)"
+          description: "Drag and drop any screenshots or screen recordings illustrating the bug."
+          placeholder: "Drag images or video files here"
+
+    - type: textarea
+      id: additional
+      attributes:
+          label: "ℹ️ Additional Context"
+          description: "Any other details, related issues, or workarounds."
+          placeholder: "Any additional notes..."

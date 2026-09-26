@@ -1,0 +1,59 @@
+name: "📋 Tracking Issue"
+description: Coordinate a large project, epic, or multi-step initiative in Scoutly
+title: "[Tracking]: "
+labels: ["tracking", "epic"]
+assignees: []
+body:
+    - type: markdown
+      attributes:
+          value: |
+              ## 📋 Tracking Issue
+
+              Use this issue to coordinate cross-cutting features, architectural refactors, or multi-component epics across Scoutly.
+
+    - type: textarea
+      id: problem_statement
+      attributes:
+          label: "🎯 Goal & Problem Statement"
+          description: "A clear overview of the objective and high-level scope."
+          placeholder: "Describe the initiative and overarching goal..."
+      validations:
+          required: true
+
+    - type: textarea
+      id: milestones
+      attributes:
+          label: "🏁 Milestones & Tasks"
+          description: "List tasks, milestones, and target completion dates."
+          placeholder: |
+              ### Phase 1: API & Data Model
+              - [ ] Create database migration for ...
+              - [ ] Implement sqlc queries and repository layer
+              - [ ] Expose REST endpoint with DTO validation
+
+              ### Phase 2: Web & Extension UI
+              - [ ] Build UI components in @scoutly/ui
+              - [ ] Integrate React Query hook in apps/web
+              - [ ] Extension autofill integration
+      validations:
+          required: true
+
+    - type: textarea
+      id: success_criteria
+      attributes:
+          label: "✅ Success Criteria"
+          description: "How will we know this initiative is fully complete and verified?"
+          placeholder: "All end-to-end tests pass, documentation is updated..."
+
+    - type: textarea
+      id: related_issues
+      attributes:
+          label: "🔗 Related Issues & Pull Requests"
+          description: "Reference related issues, branches, or PRs."
+          placeholder: "- Relates to #101\n- Blocks #105"
+
+    - type: textarea
+      id: additional_context
+      attributes:
+          label: "ℹ️ Additional Notes"
+          description: "Any technical constraints, architecture diagrams, or links."

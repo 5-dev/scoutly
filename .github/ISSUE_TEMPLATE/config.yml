@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+    - name: "🔒 Security Vulnerability"
+      url: "mailto:security@scoutly.in"
+      about: "Please report security vulnerabilities privately via email rather than opening a public issue."
+    - name: "💬 Questions & Discussions"
+      url: "https://github.com/RanitManik/Scoutly/discussions"
+      about: "Ask questions, share ideas, and engage with the team."

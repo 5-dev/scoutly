@@ -1,0 +1,34 @@
+name: "✍️ Documentation Update"
+description: Report an issue, inaccuracy, or improvement in Scoutly documentation
+title: "[Docs]: "
+labels: ["documentation", "triage"]
+assignees: []
+body:
+    - type: markdown
+      attributes:
+          value: |
+              ## ✍️ Documentation Update
+
+              Help us keep Scoutly documentation accurate, clean, and comprehensive.
+
+    - type: textarea
+      id: description
+      attributes:
+          label: "📝 Describe the Issue or Improvement"
+          description: "What needs to be updated or added? Include file paths or URLs if applicable."
+          placeholder: "The setup instructions in CONTRIBUTING.md or docs/quick-start missing..."
+      validations:
+          required: true
+
+    - type: textarea
+      id: suggested_change
+      attributes:
+          label: "💡 Suggested Fix / Content"
+          description: "Provide the updated wording or code snippet if available."
+          placeholder: "Replace '...' with '...'"
+
+    - type: textarea
+      id: context
+      attributes:
+          label: "ℹ️ Additional Context"
+          description: "Any extra notes or related issues."

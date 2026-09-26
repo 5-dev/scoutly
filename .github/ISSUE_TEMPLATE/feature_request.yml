@@ -1,0 +1,67 @@
+name: "🚀 Feature Request"
+description: Propose a new feature, enhancement, or capability for Scoutly
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+assignees: []
+body:
+    - type: markdown
+      attributes:
+          value: |
+              ## 🚀 Feature Request
+
+              Thank you for suggesting a feature or improvement for **Scoutly**. Please describe the motivation, user impact, and proposed solution.
+
+    - type: dropdown
+      id: component
+      attributes:
+          label: "📦 Targeted Component"
+          description: "Which part of Scoutly does this feature apply to?"
+          options:
+              - "Web App (apps/web)"
+              - "API Backend (apps/api)"
+              - "Chrome Extension (apps/ext)"
+              - "Python Ingestion Engine (services/engine)"
+              - "Shared UI Primitives (@scoutly/ui)"
+              - "Multiple / Full-Stack"
+      validations:
+          required: true
+
+    - type: input
+      id: summary
+      attributes:
+          label: "Summary"
+          description: "A one-line summary of the requested feature."
+          placeholder: "e.g., Export tailored resumes directly to Notion or PDF"
+      validations:
+          required: true
+
+    - type: textarea
+      id: motivation
+      attributes:
+          label: "🎯 Problem Statement & Motivation"
+          description: "What problem does this feature solve? What user need does it address?"
+          placeholder: "Currently, users must manually copy application answers when..."
+      validations:
+          required: true
+
+    - type: textarea
+      id: proposed_solution
+      attributes:
+          label: "💡 Proposed Solution"
+          description: "How should this feature work? Describe UX or technical design if known."
+          placeholder: "Add an export modal that..."
+      validations:
+          required: true
+
+    - type: textarea
+      id: alternatives
+      attributes:
+          label: "🔄 Alternatives Considered"
+          description: "Describe any alternative solutions or features considered."
+          placeholder: "We could also consider..."
+
+    - type: textarea
+      id: additional
+      attributes:
+          label: "ℹ️ Additional Context"
+          description: "Attach mockups, wireframes, user flow diagrams, or reference links."
