@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="70" src="logo.png" alt="Scoutly Logo" />
+  <img width="60" src="logo.png" alt="Scoutly Logo" />
   <h1>Scoutly</h1>
   <p><strong>AI-Powered Job Application & Career Co-Pilot Platform</strong></p>
 </div>
